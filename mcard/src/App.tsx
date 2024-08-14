@@ -1,24 +1,29 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import Button from "./components/shared/Button";
+import Text from "./components/shared/Text";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Reactdsfsdd
-        </a>
-      </header>
+    <div>
+      <Text typography="t1" display="block" color="red">
+        t1
+      </Text>
+      <Text typography="t2" color="blue">
+        t2
+      </Text>
+      <Text typography="t3">t3</Text>
+      <Text typography="t4">t4</Text>
+      <Text typography="t5">t5</Text>
+
+      <Button>클릭하세요</Button>
+      <Button color="success">클릭하세요</Button>
+      <Button color="error">클릭하세요</Button>
+      <Button color="error" weak={true}>
+        클릭하세요
+      </Button>
+      <Button full={true}>클릭하세요</Button>
+      <Button full={true} disabled={true}>
+        클릭하세요
+      </Button>
     </div>
   );
 }
